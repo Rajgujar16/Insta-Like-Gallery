@@ -8,11 +8,11 @@ body {
     display: flex;
 }
 
-.card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
+.card {
+    background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
 }
 
 #love {
@@ -31,23 +31,26 @@ body {
     max-width: 250px;
     padding: 5px;
     display: flex;
-    justify-content: space-around;
+    
 }
 
 #footer i {
     font-size: 24px;
     color: white;
+    margin-right: 10px;
 }
 
 @media (max-width: 768px) {
     .card {
         width: 80%;
+        max-width: 300px;
     }
 }
 
 @media (max-width: 576px) {
     .card {
         width: 95%;
+        max-width: 300px;
     }
 
     #footer i {
